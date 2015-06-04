@@ -1,32 +1,79 @@
 <!DOCTYPE html>
+<html>
 <head>
-	<title>Matt Gukowsky</title>
-	<meta charset="UTF-8">
+	<title>Matt Gukowsky | NYC Web Developer</title>
+	<meta charset="utf-8">
 	<meta name="author" content="Matt Gukowsky">
-	<link rel="stylesheet" type="text/css" href='http://fonts.googleapis.com/css?family=Francois+One'>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 <body>
-	<section id="name">
-		<p>Matt Gukowsky</p>
-	</section>
-	<section id="bio">
-		<p>Welcome! I'm an NYC-based web developer looking to break into the industry.</p><br>
-		<p>Thanks for visiting!</p>
-	</section>
-	<section id="links">
-		<ul>
-			<li>View my <a href="assets/resume.pdf">resume</a></li>
-		</ul>
-		<label>Some of my projects:</label>
-		<ul>
-			<li><a href="http://mgukowsky.github.io/centipede/">Centipede</a></li>
-			<li><a href="csbs.herokuapp.com">CSBS</a></li>
-		</ul>
-	</section>
-	<ul id="footers">
-		<li><a href="https://github.com/mgukowsky">GitHub</a> | <div id="linkedin-icon"></div></li>
-		<li><p>mgukowsky@gmail.com</p></li>
-		<li><p>914-325-5373</p></li>
+	<h1 id="title-bar">Matt Gukowsky | NYC Web Developer</h1>
+	<section id="active-section"></section>
+	<ul id="a-list">
+		<li><a href="#/about" id="init">About</a></li>
+		<li><a href="#/projects">Projects</a></li>
+		<li><a href="/Matt_Gukowsky_Resume_Master.pdf">Resume</a></li>
+		<li><a href="#/contact">Contact</a></li>
 	</ul>
+	<ul id="partial-register">
+		<li id="about">
+			<h1>About Me</h1>
+			<p>Hi!</p>
+			<br>
+			<p>I'm a web developer in NYC looking for a challenge.
+				As a recent graduate of the selective <keyword>App Academy</keyword>, I enjoy building projects in <keyword>Ruby</keyword>,
+				<keyword>Rails</keyword>, and <keyword>JavaScript</keyword>, using libraries such as <keyword>jQuery</keyword> and <keyword>Backbone.js</keyword>.</p>
+			<br>
+				<p>I enjoy the challenge of programming because of how I discovered it.
+					I played video games for as long as I can remember, and as a teenager
+					I started experimenting with modding tools. What started as an interest
+					grew into a hobby and finally into a career. I think of development like
+					beating a game: just like there is always a new level to beat or record to
+					break, there is always a more efficient code to be written.</p>
+			<br>
+			<p>Some other tidbits about me:<p>
+			<ul class="ul-about-me">
+				<li>- <keyword>TDD</keyword> is my workflow; nothing makes my day like getting an integration suite to pass.</li>
+				<li>- I am most comfortable designing with <keyword>MVC</keyword> and <keyword>REST</keyword> architecture in mind. I usually start with <keyword>CRUD</keyword> actions and work my way up from there.</li>
+				<li>- Most recently I have been working with <keyword>Angular</keyword> and server-side <keyword>Node.js</keyword>, as well as <keyword>C++</keyword> with the WIN32 API.</li>
+				<li>- I enjoy working with <keyword>AI</keyword>, to which I apply my psychology background, and digital audio, which I studied in college.</p></li>
+			</ul>
+		</li>
+
+		<li id="projects">
+			<h1>Projects</h1>
+			<h2>CSBS (<a href="http://csbs.herokuapp.com">Live</a>) | <a href="http://github.com/mgukowsky/csbs">GitHub</a></h2>
+			<p class="itals">A flashcard app modeled after Brainscape.</p>
+			<p>- A Backbone.js front-end is supported by a RESTful Rails JSON API.</p>
+			<p>- Algorithm implemented in Backbone.js causes more challenging flashcards to appear more frequently.</p>
+			<p>- Sharing, rating, and public/private functionality for flashcard decks.</p>
+			<br>
+			<h2>Centipede (<a href="http://mgukowsky.com/centipede">Live</a>) | <a href="http://github.com/mgukowsky/centipede">GitHub</a></h2>
+			<p class="itals">Browser version of the classic Atari game.</p>
+			<p>- Responsive CSS effects which can be toggled on and off.</p>
+			<p>- Utilizes a hash to efficiently track all game objects.</p>
+			<br>
+			<h2>RailsLite | <a href="http://github.com/mgukowsky/RailsLite">GitHub</a></h2>
+			<p class="itals">Web server which recreates Rails back-end functionality.</p>
+			<p>- New routes defined through dynamic programming.</p>
+			<p>- User-defined controllers, session tracking with cookies.</p>
+		</li>
+
+		<li id="resume">
+			<a href="./assets/Matt_Gukowsky_Resume_Master.pdf"></a>
+		</li>
+
+		<li id="contact">
+			<h1>Contact Info</h1><br>
+			<h2 class='cent'><a href="mailto:mgukowsky@gmail.com">mgukowsky@gmail.com</a></h2><br>
+			<h2 class='cent'>Phone: 914-325-5373</h2><br>
+			<h2 class='cent'><a href="https://www.linkedin.com/pub/matt-gukowsky/9a/605/a2">LinkedIn</a></h2><br>
+			<h2 class='cent'><a href="http://github.com/mgukowsky">GitHub</a></h2><br>
+		</li>
+	</ul>
+
+	<script src="http://code.jquery.com/jquery-1.11.3.js" type="application/javascript"></script>
+	<script src="./profile.js" type="application/javascript"></script>
 </body>
+</html>
