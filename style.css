@@ -41,11 +41,13 @@ a:hover {
 	position: absolute;
 	float: left;
 	top: 90px;
+	left: 0px;
 	background-color: #CCC;
 	color: #000;
+	padding-left: 10px;
 	padding-right: 20px;
 	height: 100%;
-	transition: background-color 1000ms;
+	transition: background-color 1000ms, left 500ms;
 }
 
 #a-list li {
@@ -96,6 +98,32 @@ a:hover {
 	display: none;
 }
 
+#hamburger {
+	float: left;
+	position: absolute;
+	left: 20px;
+}
+
+#hamburger:hover {
+	text-decoration: none;
+	color: #CCC;
+}
+
+#profile-pic {
+	float: right;
+	right: 20px;
+	top: 3px;;
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	border-radius:150px;
+	border: 1px solid #CCC;
+}
+
+#profile-pic:hover {
+	border-color: #F00;
+}
+
 keyword {
 	display: inline;
 	color: #0A0;
@@ -107,4 +135,7 @@ keyword {
 
 .cent {
 	text-align: center;
+}
+
+.hidden-list {
 }
