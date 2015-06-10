@@ -6,7 +6,7 @@ $(document).ready(function(){
   var $links = $('a');
   var $activeSection = $('#active-section');
   var activeId, activePartial;
-  var $hamburder = $('#hamburger');
+  var $hamburger = $('#hamburger');
 
   $links.on('click', function(event){
     event.preventDefault();
@@ -50,5 +50,8 @@ $(document).ready(function(){
   });
 
   $('#init').trigger('click');
+  setTimeout(function(){
+    $hamburger.trigger("click");
+  }, 5000);
 
 });
