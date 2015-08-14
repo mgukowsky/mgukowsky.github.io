@@ -81,7 +81,7 @@ a:hover {
 }
 
 #active-section a{
-	color: #00F;
+	color: #47B6FF;
 }
 
 #active-section h1 {
@@ -139,4 +139,13 @@ keyword {
 }
 
 .hidden-list {
+}
+
+.screenshot {
+	height: 200px;
+	float: right;
+}
+
+.screenshot:hover {
+	cursor: zoom-in;
 }
