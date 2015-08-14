@@ -13,7 +13,7 @@ $(document).ready(function(){
     event.stopPropagation();
     activeId = $(event.currentTarget).attr('href').split('/')[1];
     if (activeId === 'Matt_Gukowsky_Resume_Master.pdf') {
-      window.open('http://mgukowsky.com/Matt_Gukowsky_Resume_Master.pdf');
+      window.open('http://mgukowsky.com/assets/Matt_Gukowsky_Resume_Master.pdf');
       return;
     } else if (activeId === 'menu') {
       $list.toggleClass('hidden-list');
