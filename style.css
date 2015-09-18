@@ -16,6 +16,12 @@ section {
 	color: #FFFFFF;
 }
 
+header {
+	background-color: #FFF;
+	color: #FFF;
+	text-align: center;
+}
+
 a, a:visited {
 	color: inherit;
 }
@@ -23,6 +29,14 @@ a, a:visited {
 a:hover {
 	font-weight: bold;
 	text-decoration: underline;
+}
+
+#profile-pic-link {
+	display: block;
+	height: 50px;
+	width: 100px;
+	margin: 0 auto;
+	margin-bottom: 30px;
 }
 
 #title-bar {
@@ -36,29 +50,20 @@ a:hover {
 }
 
 #a-list {
-	position: absolute;
-	float: left;
-	top: 90px;
-	left: 0px;
-	background-color: #CCC;
-	color: #FFF;
-	padding-left: 10px;
-	padding-right: 20px;
-	height: 100%;
-	transition: background-color 1000ms, left 500ms;
+	padding: 10px 0;
+	height: inherit;
+	font-size: 30px;
+	transition: background-color 1000ms;
 }
 
 #a-list li {
-	display: block;
-	border-top: 1px solid #CCC;
-	padding-top: 20px;
-	margin-top: 20px;
-	font-size: 30px;
+	display: inline;
+	border-right: 1px solid #FFF;
+	padding: 0 30px;
 }
 
 #a-list li:last-child {
-	padding-bottom: 20px;
-	border-bottom: 1px solid #CCC;
+	border-right: none;
 }
 
 #active-section {
@@ -95,22 +100,7 @@ a:hover {
 	display: none;
 }
 
-#hamburger {
-	float: left;
-	position: absolute;
-	left: 20px;
-}
-
-#hamburger:hover {
-	text-decoration: none;
-	color: #CCC;
-}
-
 #profile-pic {
-	float: right;
-	right: 20px;
-	top: 3px;;
-	position: absolute;
 	width: 80px;
 	height: 80px;
 	border-radius:150px;

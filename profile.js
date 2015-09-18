@@ -6,7 +6,6 @@ $(document).ready(function(){
   var $links = $('a');
   var $activeSection = $('#active-section');
   var activeId, activePartial;
-  var $hamburger = $('#hamburger');
 
   $links.on('click', function(event){
     event.preventDefault();
@@ -16,8 +15,6 @@ $(document).ready(function(){
       window.open('http://mgukowsky.com/assets/Matt_Gukowsky_Resume_Master.pdf');
       return;
     } else if (activeId === 'menu') {
-      $list.toggleClass('hidden-list');
-      ($list.hasClass('hidden-list')) ? $list.css({'left':'-145px'}) : $list.css({'left':'0px'});
       return;
     }
     activePartial = $('#' + activeId).html();
@@ -50,8 +47,4 @@ $(document).ready(function(){
   });
 
   $('#init').trigger('click');
-  setTimeout(function(){
-    $hamburger.trigger("click");
-  }, 5000);
-
 });
