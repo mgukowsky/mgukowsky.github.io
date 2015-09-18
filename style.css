@@ -5,9 +5,6 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	font-family: 'Ubuntu', sans-serif;
 }
 
-/*body{
-	background: url(assets/horizon.jpg);
-}*/
 body {
 	background-color: #000;
 	transition: background-color 1000ms;
@@ -65,7 +62,6 @@ a:hover {
 }
 
 #active-section {
-	/*position: absolute;*/
 	font-size: 20px;
 	background-color: #444;
 	border: 1px solid #CCC;
