@@ -22,6 +22,11 @@ header {
 	text-align: center;
 }
 
+bold {
+	font-weight: bolder;
+	color: #00A400;
+}
+
 a, a:visited {
 	color: inherit;
 }
