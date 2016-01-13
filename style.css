@@ -1,142 +1,176 @@
-/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;vertical-align:baseline;margin:0;padding:0;text-decoration:none}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
-
-*{
+html > * {
 	font-family: 'Ubuntu', sans-serif;
+	text-align: center;
 }
 
-body {
-	background-color: #000;
-	transition: background-color 1000ms;
-}
-
-section {
-	border-radius: 20px;
-	background-color: #333333;
-	color: #FFFFFF;
+h2 {
+	font-size: 50px;
 }
 
 header {
-	background-color: #FFF;
-	color: #FFF;
-	text-align: center;
-}
-
-bold {
-	font-weight: bolder;
-	color: #00A400;
-}
-
-a, a:visited {
-	color: inherit;
-}
-
-a:hover {
-	font-weight: bold;
-	text-decoration: underline;
-}
-
-#profile-pic-link {
-	display: block;
-	height: 50px;
-	width: 100px;
-	margin: 0 auto;
-	margin-bottom: 30px;
-}
-
-#title-bar {
-	background-color: #FFF;
-	color: #FFF;
 	font-size: 50px;
-	text-align: center;
-	font-weight: bold;
 	padding: 20px;
-	transition: background-color 1000ms;
 }
 
-#a-list {
-	padding: 10px 0;
-	height: inherit;
-	font-size: 30px;
-	transition: background-color 1000ms;
-}
+footer {
 
-#a-list li {
-	display: inline;
-	border-right: 1px solid #FFF;
-	padding: 0 30px;
-}
-
-#a-list li:last-child {
-	border-right: none;
-}
-
-#active-section {
-	font-size: 20px;
-	background-color: #444;
-	border: 1px solid #CCC;
-	border-radius: 20px;
-	padding: 30px;
-	width: 800px;
-	margin: 15px auto;
-	text-align: left;
-	overflow: hidden;
-	line-height: 150%;
-	list-style: disc;
-	transition: opacity 500ms;
-}
-
-#active-section a{
-	color: #47B6FF;
-}
-
-#active-section h1 {
-	text-align: center;
-	font-size: 40px;
-	font-weight: bold;
-	padding-bottom: 20px;
-}
-
-#active-section h2{
-	font-size: 20px;
-}
-
-#partial-register {
-	display: none;
-}
-
-#profile-pic {
-	width: 80px;
-	height: 80px;
-	border-radius:150px;
-	border: 1px solid #CCC;
-}
-
-#profile-pic:hover {
-	border-color: #F00;
 }
 
 keyword {
-	display: inline;
-	color: #0A0;
+	color: #1aff1a;
+	font-weight: bold;
 }
 
-.itals {
-	font-style: italic;
+bold {
+	font-weight: bold;
 }
 
-.cent {
-	text-align: center;
+a {
+	text-decoration: none;
+	font-weight: bold;
+	color: #00F0BB;
 }
 
-.hidden-list {
+a:visited{
+	color: #00F0BB;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a.nav:hover {
+	color: #ffff1a;
+	text-decoration: none;
+}
+
+a.active {
+	border: 2px solid #FFFFFF;
+}
+
+a.nav {
+	display: block;
+	color: inherit;
+	min-width: 150px;
+	position: fixed;
+	right: 40px;
+}
+
+.dialog {
+	
+}
+
+.dialog > h1, section > h1 {
+	border: 3px solid #000000;
+	border-radius: 20px;
+	font-size: 60px;
+	padding: 20px;
+	margin: 30px 0px;
+	background-color: #b30000;
 }
 
 .screenshot {
-	height: 200px;
-	float: right;
+	width: 400px;
+	height: auto;
 }
 
-.screenshot:hover {
-	cursor: zoom-in;
+.project-info {
+	font-size: 18px;
+	text-align: left;
+	min-height: 350px;
+	display: -webkit-flex;
+	display:         flex;
+	-webkit-flex-flow: row nowrap;
+	      	flex-flow: row nowrap;
+	margin: 30px 0px;
+}
+
+.project-info > figure {
+	-webkit-flex: 1 1 auto;
+	      	flex: 1 1 auto;
+	-webkit-order: 1;
+	      	order: 1;
+	margin-right: 20px;
+}
+
+.project-info > figcaption {
+	-webkit-flex: 5 1 auto;
+	      	flex: 5 1 auto;
+	-webkit-order: 2;
+	      	order: 2;
+}
+
+figcaption > .summary {
+	text-align: center;
+	font-size: 25px;
+	font-style: italic;
+}
+
+#technologies > h2 {
+	margin-bottom: 20px;
+}
+
+#technologies > img {
+	height: 150px;
+	width: auto;
+}
+
+#main-dialog {
+	font-size: 25px;
+	min-height: 500px;
+	margin: 0px;
+	padding: 0px;
+	line-height: 200%;
+	display: -webkit-flex;
+	display:         flex;
+	-webkit-flex-flow: row nowrap;
+	      	flex-flow: row nowrap;
+}
+
+#main-dialog > article {
+	padding: 50px;
+	background: #002266;
+	color: #FFFFFF;
+	-webkit-flex: 10 1 auto;
+	      	flex: 10 1 auto;
+	-webkit-order: 1;
+	      	order: 1;
+}
+
+#main-dialog > nav {
+	color: #000000;
+	background: #80aaff;
+	padding: 0px;
+	min-width: 220px;
+	-webkit-flex: 1 1 auto;
+	      	flex: 1 1 auto;
+	-webkit-order: 2;
+	      	order: 2;
+}
+
+#resume-pdf {
+	display: block;
+	width: 100%;
+	height: 500px;
+}
+
+#nav-about {
+	top: 50px;
+}
+
+#nav-projects {
+	top: 200px;
+}
+
+#nav-resume {
+	top: 350px;
+}
+
+#nav-contact {
+	top: 500px;
+}
+
+@media (max-width: 850px) {
+  #navigation-dialog {
+    display: none;
 }
